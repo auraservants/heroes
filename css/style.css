@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #00669F;
+    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+.top-header{
+    background-color: #1CD1B0;
+    padding: 10px;
+}
+
+.container{
+    position: relative;
+    padding: 50px;
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.card1, .card2, .card3{
+    position: relative;
+    width: 300px;
+    height: 336px;
+    background-color: #F3F3F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-right: 40px;
+}
+
+.card1 img, .card2 img, .card3 img{
+    position: relative;
+    bottom: 190px;
+}
+
+.heart-1, .heart-2, .heart-3{
+ position: absolute;
+ top: 10px;
+ left: 10px;
+ z-index: 3;
+}
+
+.avatar-1, .avatar-2, .avatar-3{
+    position: absolute;
+    align-self: center;
+    z-index: 2;
+    left: 85px;
+    top: 130px;
+}
+
+.avatar-1 img, .avatar-2 img, .avatar-3 img{
+    border-radius: 50%;
+}
+
+.card1 h2, .card2 h2, .card3 h2{
+    position: relative;
+    bottom: 120px;
+}
+
+.card1 p, .card2 p, .card3 p{
+    padding: 16px;
+    position: relative;
+    bottom: 110px;
+}
+
+
+.card1 a, .card2 a, .card3 a{
+    position: relative;
+    bottom: 100px;
+    left: 85px;
+    padding: 10px 30px 10px 30px;
+    background-color: #00669F;
+}
+
+
+.main-footer{
+    background-color: #00669F;
+    padding: 15px;
+    margin-top: 150px;
+}
+
+.main-footer p{
+    color: #ffffff;
+    font-size: 16px;
+}
