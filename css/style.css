@@ -8,10 +8,15 @@
     font-family: 'Roboto', 'Karla', sans-serif;
 }
 
+main{
+    margin-top: 50px;
+}
+
 h1{
     font-size: 40px;
     font-weight: 400;
     color: #ffffff;
+    padding-left: 10px;
 }
 
 li{
@@ -42,8 +47,12 @@ a{
     top: 0;
     z-index: 999;
     background-color: #00669F;
+    width: 100%;
     box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
     padding: 20px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
 }
 
 .top-header{
@@ -70,7 +79,8 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    padding-top: 150px;
+    padding-bottom: 100px;
 }
 
 .container{
@@ -133,13 +143,17 @@ a{
     background-color: #00669F;
 }
 
-.add-btn{
+.add-btn a{
     font-size: 70px;
     color: #00669F;
     position: fixed;
     top: 50vh;
     right: calc(5% - 45px);
+}
 
+.add-btn a:hover{
+    color:#001D2D;
+    ;
 }
 
 /* FOTOER */
@@ -157,14 +171,13 @@ a{
 
 /* LOGIN PAGE */
 
-.form-container{
+.login-container{
     display: flex;
     flex-direction: column;
     width: 550px;
     margin: auto;
-    height: 82vh;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
 }
 
 .form-title{
@@ -184,7 +197,7 @@ a{
    
 }
 
-.email-label, .password-label{
+.email-label, .password-label, .fullname-label, .country-label{
     font-size: 22px;
     font-weight: 700;
     padding-bottom: 5px;
@@ -196,7 +209,7 @@ a{
     display: flex;
     flex-direction: column;
     width: 450px;
-    
+    padding-bottom: 20px; 
 }
 
 .btn{
@@ -227,21 +240,21 @@ input[type=password]{
     color: #acacac;
 }
 
-input[type=submit]{
+.btn input[type=submit]{
     background-color:#1CD1B0;
     border: none;
     border-radius: 23.011px;
     color: black;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
-    padding: 16px 55px;
+    padding: 10px 55px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer; 
     width: 100%;
 }
 
-.registration-link {
+.registration-link, .login-link {
     font-size: 21.48px;
     color: #000000;
     width: 450px;
@@ -250,14 +263,110 @@ input[type=submit]{
     font-size: normal;
     font-weight: 400;
     padding-top: 10px;
+
 }
 
-.registration-link a{
+.registration-link a, .login-link a{
     font-size: 21.48px;
     color: #00669F;
     font-family: 'Karla', sans-serif;
+    padding-left: 5px;
 }
 
 
 
 /* REGISTRO */
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: auto;
+    height: 79vh;
+    padding-bottom: 100px;
+}
+
+
+.fullname, .country{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding-bottom: 20px;
+    font-family: 'Karla', sans-serif;
+}
+
+input[type=text]{
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    width: 100%;
+    color: #494949;
+    height: 45px;
+    padding: 5px;
+    font-size: 17px;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+select{
+    background: #FFFFFF;
+    border: 1.53407px solid #000000;
+    width: 100%;
+    color: #494949;
+    height: 45px;
+    padding: 5px;
+    font-size: 17px;
+    width: 100%;
+    font-family: 'Karla', sans-serif;
+}
+
+
+.btn-registro{
+    width: 500px;
+    margin-top: 30px;
+}
+
+
+.btn-registro input[type=submit]{
+    background-color:#1CD1B0;
+    border: none;
+    border-radius: 23.011px;
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 55px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer; 
+    width: 45%;
+}
+
+.btn-registro input[type=reset]{
+    background-color:#888888;
+    border: none;
+    border-radius: 23.011px;
+    color:#ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 55px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer; 
+    width: 45%;
+}
+
+/* AÑADIR SUPERHEROE */
+
+.add-container{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.first-row{
+    width: 40%;
+}
+
+.second-row{
+    width: 40%;
+}
+

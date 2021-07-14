@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Añadir nuevo personaje</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="top-header">
+        <h3>20% de descuento en todos los productos</h3>
+    </div>
+    <header>
+        <div class="main-header">
+            <a href="index.html"><img src="images/logo 1.png" alt="logo de tienda"></a>
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav class="menu">
+            <li><a href="login.html">Ingresar</a></li>
+            <li><a href="registro.html">Registrarme</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <h4>Añadí tu super</h4>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <div class="add-container">
+            <form action="#" method="POST">
+                <div class="first-row">
+                    <!-- <div class="super-name"> -->
+                        <label for="name">*Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    <!-- </div> -->
+
+                    <!-- <div class="super-date"> -->
+                        <label for="date">Fecha</label>
+                        <input type="date" id="date" name="date">
+                    <!--</div> -->
+
+                    <!-- <div class="super-text"> -->
+                        <label for="text">Descripción</label>
+                        <textarea name="text" id="text" cols="30" rows="10" placeholder="Escribe tu descripción"></textarea>
+                    <!-- </div> -->
+                </div>
+
+                <div class="second-row">
+                    <!-- <div class="super-especie"> -->
+                        <label for="especie">*Especie</label>
+                        <select name="especie" id="especie">
+                            <option disabled selected value>Especie</option>
+                            <option value="opcion1">Opción 1</option>
+                            <option value="opcion2">Opción 2</option>
+                            <option value="opcion3">Opción 3</option>
+                        </select>
+                    <!--</div> -->
+
+                    <!--<div class="super-file"> -->
+                        <label for="picture">Agregar Foto</label>
+                        <input type="file">
+                    <!--</div> -->
+
+                    <!--<div class="super-poderes"> -->
+                        <label for="poderes">Poderes</label>
+                    <!--</div> -->
+
+                    <!--<div class="super-personaje"> -->
+                        <label for="personaje">Tipo de personaje</label>
+                        <input type="radio" name="personaje" id="heroe" value="Heroina/ Héroe" checked>
+                        <label for="heroe">Heroina / Héroe</label>
+                        <input type="radio" name="personaje" id="villano" value="Villana/ Villano">
+                        <label for="villano">Villana/ Villano</label>
+                    <!--</div> -->
+                </div>
+
+                <input type="submit" value="Añadir">
+            </form>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
